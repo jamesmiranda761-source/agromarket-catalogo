@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroMarket - Catálogo de productos</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f4ee;
+      color: #2b2b28;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      color: #3f6b34;
+      margin-bottom: 1.5rem;
+    }
+    .filtros {
+      display: flex;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+    .filtro {
+      background: #eef1e6;
+      border: 1px solid #c9d4b8;
+      color: #3f6b34;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    ul.lista-productos {
+      list-style: none;
+      padding: 0;
+      max-width: 480px;
+    }
+    .producto {
+      display: flex;
+      justify-content: space-between;
+      background: #ffffff;
+      border: 1px solid #ddd8ca;
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+    .precio {
+      font-weight: bold;
+      color: #3f6b34;
+    }
+  </style>
+</head>
+<body>
+  <h1>AgroMarket — Catálogo de productos</h1>
+
+  <div class="filtros">
+    <button class="filtro" data-categoria="frutas">Frutas</button>
+    <button class="filtro" data-categoria="hortalizas">Hortalizas</button>
+    <button class="filtro" data-categoria="granos">Granos</button>
+  </div>
+<p class="ayuda-filtro">Toca una categoría para ver solo esos productos.</p>
+
+  <ul class="lista-productos">
+    <li class="producto" data-categoria="hortalizas"><span>Tomate riñón (libra)</span><span class="precio">$0.75</span></li>
+    <li class="producto" data-categoria="frutas"><span>Plátano verde (unidad)</span><span class="precio">$0.20</span></li>
+    <li class="producto" data-categoria="granos"><span>Arroz (quintal)</span><span class="precio">$32.00</span></li>
+    <li class="producto" data-categoria="granos"><span>Cacao en grano (libra)</span><span class="precio">$2.10</span></li>
+    <li class="producto" data-categoria="granos"><span>Café molido (libra)</span><span class="precio">$4.50</span></li>
+  </ul>
+</body>
+</html>
